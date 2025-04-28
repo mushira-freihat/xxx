@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق يُمن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <div class="nav-center">
+      <span class="logo">🌿 يُمن</span>
+    </div>
+    <ul>
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#about">عن التطبيق</a></li>
+      <li><a href="#stores">المتاجر</a></li>
+    </ul>
+  </nav>
+
+  <!-- قسم المتاجر -->
+  <main class="container" id="stores">
+
+    <section>
+      <h2>المطاعم 🍽️</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" alt="وجبة">
+          <h3>كبسة دجاج</h3>
+          <p>20 ريال</p>
+          <button class="add-to-cart">طلب</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>المخابز 🍞</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" alt="مخبوزات">
+          <h3>فطيرة جبن</h3>
+          <p>5 ريال</p>
+          <button class="add-to-cart">طلب</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>السوبرماركت 🛒</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" alt="منتج">
+          <h3>علبة عصير</h3>
+          <p>3 ريال</p>
+          <button class="add-to-cart">طلب</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>محلات الخضار 🥬</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" alt="خضار">
+          <h3>طماطم</h3>
+          <p>2 ريال</p>
+          <button class="add-to-cart">طلب</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- أيقونة السلة -->
+  <div class="cart-icon" id="cart-icon">
+    <span class="cart-count" id="cart-count">0</span>
+    🛒
+  </div>
+
+  <!-- مودال السلة -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <span class="close" id="close-cart">&times;</span>
+      <h3>سلة الطلب</h3>
+      <ul id="cart-items"></ul>
+      <div class="cart-summary">
+        <p>الإجمالي: <span id="cart-total">0</span> ريال</p>
+        <button id="checkout-btn">إتمام الطلب</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم عن التطبيق -->
+  <section id="about" class="about-section">
+    <h2>عن التطبيق</h2>
+    <p><strong>الرؤية:</strong> تقليل الهدر الغذائي وتعزيز الاستدامة في المجتمع.</p>
+    <p><strong>الرسالة:</strong> ربط المتاجر التي لديها فائض طعام بالمستهلكين الباحثين عن التوفير.</p>
+    <p><strong>وصف:</strong> تطبيق يُمن يتيح للمستخدمين شراء منتجات طازجة بأسعار منخفضة من المطاعم، الكافيهات، المخابز، السوبرماركت ومحلات الخضار، مما يساهم في تقليل الهدر الغذائي ودعم الاقتصاد المحلي.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
